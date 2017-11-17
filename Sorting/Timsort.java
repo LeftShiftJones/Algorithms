@@ -26,7 +26,16 @@ public class Timsort {
     }
 
     /**
-    * Method finds runs in the list and runs the merge() method to get them sorted
+    * Constructor that takes an integer array as an argument, copies it over
+    *
+    * @param newArray Array to copy over
+    */
+    public Timsort(int[] newArray) {
+        this.array = newArray;
+    }
+
+    /**
+    * Method finds runs in the list and sorts them with merge()
     */
     public void sort() {
         int f1 = 0,
@@ -44,7 +53,7 @@ public class Timsort {
             if(f2 == this.array.length - 1) { //First run reached the end;
                 f1  = 0;
                 f2 = 0;
-                continue; //Return to the beginning, since we can't fit in another run
+                continue; //Return to the beginning, since we ran out of runs
             }
 
             s1 = f2 + 1;
@@ -59,6 +68,11 @@ public class Timsort {
 
     /**
     * Private merge method merges runs. Probably buggy right now
+    *
+    * @param f1 First run, first pointer
+    * @param f2 First run, second pointer
+    * @param s1 Second run, first pointer
+    * @param s2 Second run, second pointer
     */
     private void merge(int f1, int f2, int s1, int s2) {
         if(this.array[s1] < this.array[f1]) swap(this.array, f1, s1); // do a check for single-value runs;
@@ -69,6 +83,13 @@ public class Timsort {
         }
     }
 
+    /**
+    * This simple method finds a run using a pointer by advancing until the next
+    * array value is smaller than the current;
+    *
+    * @param start Index to start run from
+    * @return Last index of run
+    */
     private int findRun(int start) {
         int current = start;
         while(current + 1 < array.length && this.array[current + 1] > this.array[current]) {
@@ -77,6 +98,11 @@ public class Timsort {
         return current;
     }
 
+    /**
+    * Swap method -- does exactly what it says
+    *
+    * @param a Array to
+    */
     private void swap(int[] a, int b, int c) {
         int temp = a[b];
         a[b] = a[c];
