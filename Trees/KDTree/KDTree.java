@@ -8,6 +8,9 @@ public class KDTree {
     /**  */
     private int size;
 
+    private class Node {
+        
+    }
     public KDTree() {
 
     }
