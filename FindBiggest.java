@@ -5,7 +5,7 @@
 
     @author Ryan Jones
     @version 1.0
-    @version 02/24/2017
+    Date: 02/24/2017
  **********************************************/
 
 public class FindBiggest {
