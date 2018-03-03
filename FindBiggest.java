@@ -9,7 +9,7 @@
 
     @author Ryan Jones
     @version 1.0
-    Date 02/24/2017
+    Date: 02/24/2017
  **********************************************/
 
 public class FindBiggest {
@@ -35,7 +35,6 @@ public class FindBiggest {
         @param a Array to check
      **********************************************/
     public static void findBiggest(int lo, int hi, int[] a) {
-
         //empty array
         if(a.length < 1) return;
         //Cases for small arrays
