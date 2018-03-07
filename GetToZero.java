@@ -3,8 +3,10 @@
     operations (+1, -1 when odd; /2 when even)
     does it take to get from some positive #
     down to 1.
-
+    Based on Google's Foo.Bar programming
+        challenge problem
     Written for COS 320: Algorithm Analysis
+    
     @version 1.0
     Date: 03/02/2018
     @author Ryan Jones
@@ -12,7 +14,7 @@
 
 import java.util.Scanner;
 
-public class FooBar {
+public class GetToZero {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a number to reduce: ");
