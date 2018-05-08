@@ -1,5 +1,5 @@
 /**********************************************
-    Class tha demonstrates the application of 
+    Class that demonstrates the application of 
         array functions that add up values from
         i to j, such that j > i.
     Written for COS 320: Algorithm Analysis
