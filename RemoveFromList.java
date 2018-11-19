@@ -36,7 +36,10 @@ public class RemoveFromList {
         for(int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
         }
-        
+        int num = 1;
+        num = (int) (num * 0.1);
+        System.out.println("Num: " + num);
+
         System.out.println();
         int[] b = remove_array_element(a, 16);
 

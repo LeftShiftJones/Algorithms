@@ -14,14 +14,15 @@
 
 public class FindBiggest {
     /** Global boolean to track if array values are unique or all the same */
-    private static boolean distinct = false, solution = false;
+    private static boolean  distinct = false,
+                            solution = false;
 
     /**********************************************
         Main method of the program
     **********************************************/
     public static void main(String args[]) {
-    //array to test
-    int[] a = {0 /**INSERT ARRAY VALUES HERE*/};
+        //array to test
+        int[] a = {0 /**INSERT ARRAY VALUES HERE*/};
         findBiggest(0, a.length-1, a);
         if(!solution) System.out.println("No solution exists");
         else if(!distinct) System.out.println("Array was made of all the same value: " + a[0]);
